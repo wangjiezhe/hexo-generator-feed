@@ -16,6 +16,12 @@
     {% if config.feed.hub %}<atom:link href="{{ config.feed.hub | uriencode }}" rel="hub"/>{% endif %}
     <description>{{ config.description }}</description>
     <pubDate>{% if posts.first().updated %}{{ posts.first().updated.toDate().toUTCString() }}{% else %}{{ posts.first().date.toDate().toUTCString() }}{% endif %}</pubDate>
+    {% if config.feed.follow_feed_id and config.feed.follow_user_id %}
+    <follow_challenge>
+      <feedId>{{ config.feed.follow_feed_id }}</feedId>
+      <userId>{{ config.feed.follow_user_id }}</userId>
+    </follow_challenge>
+    {% endif %}
     <generator>http://hexo.io/</generator>
     {% for post in posts.toArray() %}
     <item>

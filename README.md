@@ -37,6 +37,8 @@ feed:
   order_by: -date
   icon: icon.png
   autodiscovery: true
+  follow_feed_id: ''
+  follow_user_id: ''
   template:
 ```
 - **enable** - Enables or disables this plugin. Enabled by default.
@@ -65,6 +67,7 @@ feed:
 - **icon** - (optional) Custom feed icon. Defaults to a gravatar of email specified in the main config.
 - **autodiscovery** - Add feed [autodiscovery](https://www.rssboard.org/rss-autodiscovery). (Default: `true`)
   * Many themes already offer this feature, so you may also need to adjust the theme's config if you wish to disable it.
+- **follow_feed_id** and **follow_user_id** - (optional) Claim feed for [Follow](https://follow.is/).
 - **template** - Custom template path(s). This file will be used to generate feed xml file, see the default templates: [atom.xml](atom.xml) and [rss2.xml](rss2.xml).
   * It is possible to specify just one custom template, even when this plugin is configured to output both feed types,
   ``` yaml

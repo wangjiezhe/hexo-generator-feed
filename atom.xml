@@ -14,6 +14,12 @@
     {% if config.email %}<email>{{ config.email }}</email>{% endif %}
   </author>
   {% endif %}
+  {% if config.feed.follow_feed_id and config.feed.follow_user_id %}
+  <follow_challenge>
+    <feedId>{{ config.feed.follow_feed_id }}</feedId>
+    <userId>{{ config.feed.follow_user_id }}</userId>
+  </follow_challenge>
+  {% endif %}
   <generator uri="https://hexo.io/">Hexo</generator>
   {% for post in posts.toArray() %}
   <entry>

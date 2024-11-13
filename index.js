@@ -13,6 +13,8 @@ hexo.config.feed = Object.assign({
   content_limit_delim: '',
   order_by: '-date',
   autodiscovery: true,
+  follow_feed_id: '',
+  follow_user_id: '',
   template: ''
 }, hexo.config.feed);
 
