@@ -1,6 +1,6 @@
 {
-  "name": "hexo-generator-feed",
-  "version": "3.0.0",
+  "name": "@wangjiezhe/hexo-generator-feed",
+  "version": "3.0.1",
   "description": "Feed generator plugin for Hexo",
   "main": "index",
   "scripts": {
@@ -17,7 +17,7 @@
     "index.js",
     "rss2.xml"
   ],
-  "repository": "hexojs/hexo-generator-feed",
+  "repository": "wangjiezhe/hexo-generator-feed",
   "homepage": "https://hexo.io/",
   "keywords": [
     "hexo",
@@ -28,7 +28,8 @@
   ],
   "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
   "maintainers": [
-    "Abner Chou <hi@abnerchou.me> (http://abnerchou.me)"
+    "Abner Chou <hi@abnerchou.me> (http://abnerchou.me)",
+    "Jiezhe Wang <wangjiezhe@gmail.com> (https://wangjiezhe.com)"
   ],
   "license": "MIT",
   "dependencies": {
